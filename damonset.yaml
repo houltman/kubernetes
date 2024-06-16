@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: apache-daemonset
+  labels:
+    app: apache
+spec:
+  selector:
+    matchLabels:
+      name: apache
+  template:
+    metadata:
+      labels:
+        name: apache
+    spec:
+      containers:
+      - name: apache-container
+        image: httpd:2.4
+        ports:
+        - containerPort: 80
+        env:
+        - name: MY_VARIABLE
+          value: "my value"
+        - name: ANOTHER_VARIABLE
+          value: "another value"
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
