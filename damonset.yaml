@@ -1,3 +1,5 @@
+# Documentacion https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
+# This is a simple daemonset file that creates a daemonset with an Apache web server.
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

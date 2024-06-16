@@ -1,3 +1,5 @@
+# Documentaction https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+# This is a simple deployment file that creates a deployment with 3 replicas of an Apache web server.
 apiVersion: apps/v1
 kind: Deployment
 metadata:

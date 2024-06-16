@@ -1,3 +1,5 @@
+# Documentation: https://kubernetes.io/docs/concepts/workloads/pods/pod/
+# This is a simple pod file that creates a pod with an Apache web server.
 apiVersion: v1
 kind: Pod
 metadata:

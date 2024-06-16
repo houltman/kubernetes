@@ -1,3 +1,5 @@
+# Documentation: https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/
+# This is a simple statefulset file that creates a statefulset with 3 replicas of an Apache web server.
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
